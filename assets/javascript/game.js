@@ -1,27 +1,58 @@
 
-        
-var wins = 0;
-var losses = 0;
-var computerNumber = [];
-var userNumber = [];
 
-function lottoGeneration() {
+// var wins = 0;
+// var losses = 0;
+// var computerNumber = 0;
+// var userNumber = 0;
 
-    var newNum = "";
-    for (var i = 1; i < 10; i++) {
-        var x = (Math.floor(Math.random() * 10));
-        newNum = newNum + x;
-    }
-    return newNum;
-}
 
-console.log(lottoGeneration());
+// var min = 19;
+// var max = 120;
+
+// // Function that update variables...
+
+
+// function updateComputer() {
+//     document.getElementById("computerNumber").innerHTML = computerNumber;
+// }
+
+// function updateTotal() {
+//     document.getElementById("userNumber").innerHTML = userNumber;
+// }
+
+// function updateWins() {
+//     document.getElementById("wins").innerHTML = wins;
+// }
+
+// function updateLosses() {
+//     document.getElementById("losses").innerHTML = losses;
+// }
+
+// function randomNumber() {
+//     computerNumber = Math.floor(Math.random() * (max - min + 1)) + min;
+// }
+
+// randomNumber();
+
+$(document).ready(function () {
+    
+    
+    
+    $(".btn1").on("click", function () {
+        console.log("hey");
+        } 
+    );
+
+
+
+
+});
 
 // <!-- which variables do we need -->
 
 //     <!-- button for clicking -->
-$(".button").on("click", function () {
-    var y = lottoGeneration()
-});
+// $(#card1).click(function() {
+//     console.log(randomNumber());
+// });
 
 // <!-- random lotto number generator -->

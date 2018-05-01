@@ -51,6 +51,8 @@ header {
     color: white;
 }
 
+/* keeping score */
+
 .scoreWins {
     text-align: center;
     margin-left: 5%;
@@ -85,12 +87,46 @@ header {
     max-width: 600px;
 }
 
+#card1 {
+    color: yellow;
+}
+
 .container img {
     width: 100%;
     height: auto;
 }
 
-.container .btn {
+.container .btn1 {
+    position: relative;
+    top: 10%;
+    left: 10%;
+    /* background-color: transparent; */
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.container .btn2 {
+    position: relative;
+    top: 10%;
+    left: 10%;
+    /* background-color: transparent; */
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.container .btn3 {
+    position: relative;
+    top: 10%;
+    left: 10%;
+    /* background-color: transparent; */
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.container .btn4 {
     position: relative;
     top: 10%;
     left: 10%;
@@ -104,3 +140,13 @@ header {
     background-color: transparent;
 }
 
+
+
+@media only screen and (max-width: 600px) {
+    .scoreLosses {
+        border-width: 0px;
+    }
+
+    .scoreWins {
+        border-width: 0px;
+    }
