@@ -91,6 +91,18 @@ header {
     color: yellow;
 }
 
+#card2 {
+    color: yellow;
+}
+
+#card3 {
+    color: yellow;
+}
+
+#card4 {
+    color: yellow;
+}
+
 .container img {
     width: 100%;
     height: auto;
@@ -137,6 +149,7 @@ header {
 }
 
 .container .btn:hover {
+    font-size: 36px;
     background-color: transparent;
 }
 
