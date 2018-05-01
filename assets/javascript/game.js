@@ -51,34 +51,43 @@ $(document).ready(function () {
     randomNumber4();
 
     function updateTotal1() {
-        document.getElementById("userNumber").innerHTML = userNumber;
         userNumber = userNumber + card1;
+        document.getElementById("userNumber").innerHTML = userNumber;
+        
     }
 
     function updateTotal2() {
-        document.getElementById("userNumber").innerHTML = userNumber;
         userNumber = userNumber + card2;
+        document.getElementById("userNumber").innerHTML = userNumber;
+        
     }
 
     function updateTotal3() {
-        document.getElementById("userNumber").innerHTML = userNumber;
         userNumber = userNumber + card3;
+        document.getElementById("userNumber").innerHTML = userNumber;
+        
     }
 
     function updateTotal4() {
-        document.getElementById("userNumber").innerHTML = userNumber;
         userNumber = userNumber + card4;
+        document.getElementById("userNumber").innerHTML = userNumber;
+        
     }
 
     function updateWins() {
-        document.getElementById("wins").innerHTML = wins;
         wins++;
+        document.getElementById("wins").innerHTML = wins;
+        userNumber = 0;
+        document.getElementById("userNumber").innerHTML = userNumber;
+        
         alert("you won!");
     }
 
     function updateLosses() {
-        document.getElementById("losses").innerHTML = losses;
         losses++;
+        document.getElementById("losses").innerHTML = losses;
+        userNumber = 0;
+        document.getElementById("userNumber").innerHTML = userNumber;
         alert("you lost!");
     }
 
@@ -89,40 +98,94 @@ $(document).ready(function () {
 
     $(".btn1").click(function () {
         updateTotal1();
+
+        if (userNumber > computerNumber) {
+            updateLosses();
+            updateComputer();
+            randomNumber1();
+            randomNumber2();
+            randomNumber3();
+            randomNumber4();
+        }
+
+        if (userNumber === computerNumber) {
+            updateWins();
+            updateComputer();
+            randomNumber1();
+            randomNumber2();
+            randomNumber3();
+            randomNumber4();
+        }
+        console.log(card1);
         } 
     );
 
     $(".btn2").click(function () {
         updateTotal2();
+        if (userNumber > computerNumber) {
+            updateLosses();
+            updateComputer();
+            randomNumber1();
+            randomNumber2();
+            randomNumber3();
+            randomNumber4();
+        }
+
+        if (userNumber === computerNumber) {
+            updateWins();
+            updateComputer();
+            randomNumber1();
+            randomNumber2();
+            randomNumber3();
+            randomNumber4();
+        }
         }
     );
 
     $(".btn3").click(function () {
         updateTotal3();
+        if (userNumber > computerNumber) {
+            updateLosses();
+            updateComputer();
+            randomNumber1();
+            randomNumber2();
+            randomNumber3();
+            randomNumber4();
+        }
+
+        if (userNumber === computerNumber) {
+            updateWins();
+            updateComputer();
+            randomNumber1();
+            randomNumber2();
+            randomNumber3();
+            randomNumber4();
+        }
         }
     );
 
     $(".btn4").click(function () {
         updateTotal4();
+        if (userNumber > computerNumber) {
+            updateLosses();
+            updateComputer();
+            randomNumber1();
+            randomNumber2();
+            randomNumber3();
+            randomNumber4();
+        }
+
+        if (userNumber === computerNumber) {
+            updateWins();
+            updateComputer();
+            randomNumber1();
+            randomNumber2();
+            randomNumber3();
+            randomNumber4();
+        }
         }
     );
 
-    if (userNumber > computerNumber) {
-        updateLosses();
-        updateComputer();
-        randomNumber1();
-        randomNumber2();
-        randomNumber3();
-        randomNumber4();
-    } 
-    
-    if (userNumber === computerNumber) {
-        updateWins();
-        updateComputer();
-        randomNumber1();
-        randomNumber2();
-        randomNumber3();
-        randomNumber4();
-    }
+
 
 });
