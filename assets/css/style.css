@@ -1,0 +1,106 @@
+body {
+    background-color: black;
+    font-family: 'Great Vibes',
+    cursive;
+}
+
+h3 {
+    text-align: center;
+    color: white;
+    padding-bottom: 1%;
+}
+
+h2 {
+    color: white;
+}
+
+p {
+    text-align: center;
+    color: white;
+}
+
+header {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    text-align: center;  
+    font-size: 46px;
+    color: white;
+}
+
+#computerNumber {
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    font-size: 36px;
+    color: springgreen;
+}
+
+#userNumber {
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    font-size: 36px;
+    color: red;
+}
+
+#wins {
+    color: white;
+}
+
+#losses {
+    color: white;
+}
+
+.scoreWins {
+    text-align: center;
+    margin-left: 5%;
+    margin-top: -10%;
+    padding: 2%;
+    position: absolute;
+    border-style: dashed;
+    border-color: aquamarine;
+    border-width: 2px;
+}
+
+.scoreLosses {
+    text-align: center;
+    margin-left: 5%;
+    margin-top: 0%;
+    padding: 2%;
+    position: absolute;
+    border-style: dashed;
+    border-color: aquamarine;
+    border-width: 2px;
+}
+
+/* button styles */
+
+.container {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+}
+
+.container img {
+    width: 100%;
+    height: auto;
+}
+
+.container .btn {
+    position: relative;
+    top: 10%;
+    left: 10%;
+    /* background-color: transparent; */
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.container .btn:hover {
+    background-color: transparent;
+}
+
